@@ -43,5 +43,5 @@ Feel free to refer to demo.py about usage!
 * Install the goprocam library: https://pypi.org/project/goprocam/
 * Switch the camera on
 * You can communicate the camera remotely via WiFi. First, WiFi must be turned on: go to Setup -> Wireless and press the WiFi icon
-* Connect your computer to the WiFi goprohero4 (password: goprohero4)
-* Download and run test script gopro_example.py from this repository
+* Connect your computer to the WiFi goprohero4
+* Download and run test script gopro_example.py from this repository. This script takes a picture and downloads it in the folder you run the script from
