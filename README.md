@@ -44,4 +44,4 @@ Feel free to refer to demo.py about usage!
 * Switch the camera on
 * You can communicate the camera remotely via WiFi. First, WiFi must be turned on: go to Setup -> Wireless and press the WiFi icon
 * Connect your computer to the WiFi goprohero4 (password: goprohero4)
-* Download and run test script gopro_example.py
+* Download and run test script gopro_example.py from this repository
