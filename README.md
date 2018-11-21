@@ -1,4 +1,4 @@
-# candy-arm-demo
+# Munchies Robot Hack Demo
 
 Demo and tutorial for https://2018.hackjunction.com/challenges/munchies-robot-hack
 
