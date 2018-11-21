@@ -34,7 +34,7 @@ In order to program Dobot in Python, do the following
 Dobot API can be found here: http://www.dobot.it/wp-content/uploads/2018/03/dobot-api-en.pdf
 The API is in C, but Dobot supports other programming languages too. List of possible functions can be found on the left sidebar of "Scripts" on Dobot Studio.
 
-Feel free to refer to demo.py about usage!
+Feel free to refer to examle scripts about usage!
 
 
 ## Operating GoPro Hero 4
