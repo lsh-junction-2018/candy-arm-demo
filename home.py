@@ -31,7 +31,6 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
     dType.SetHOMECmd(api, temp = 0, isQueued = 1)
 
     lastIndex = dType.SetPTPWithLCmd(api, dType.PTPMode.PTPMOVLXYZMode, 256, 0, -11, 0, 0.0, isQueued=1)[0]
-#def SetPTPWithLCmd(api, ptpMode, x, y, z, rHead, l, isQueued=0):
 
     #Start to Execute Command Queued
     dType.SetQueuedCmdStartExec(api)

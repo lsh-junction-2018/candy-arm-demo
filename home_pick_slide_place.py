@@ -27,6 +27,10 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
     dType.SetDeviceWithL(api, True)
 
     # Home
+
+    # The format of the command is
+    # SetPTPWithLCmd(api, ptpMode, x location, y location, z location, rotation amount, linear rail location, isQueued=1)
+
     dType.SetPTPWithLCmd(api, dType.PTPMode.PTPMOVLXYZMode, 256, 0, -11, 0, 0.0, isQueued=1)
     dType.SetHOMECmd(api, temp = 0, isQueued = 1)
 
@@ -62,25 +66,15 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
 
 
     lastIndex = dType.SetPTPWithLCmd(api, dType.PTPMode.PTPMOVJXYZMode, 210, 0, 100, 0, 200.0, isQueued=1)[0]
-#def SetPTPWithLCmd(api, ptpMode, x, y, z, rHead, l, isQueued=0):
-#[ptpMode, x,y,z,r, wait_time, suction_cup, slider]
 
-    #Async PTP Motion
-    #for i in range(0, 5):
-    #    if i % 2 == 0:
-    #        offset = 50
-    #    else:
-    #        offset = -50
-    #    lastIndex = dType.SetPTPCmd(api, dType.PTPMode.PTPMOVLXYZMode, 200 + offset, offset, offset,  offset, isQueued = 1)[0]
-
-    #Start to Execute Command Queued
+    #Start to execute command queued
     dType.SetQueuedCmdStartExec(api)
 
-    #Wait for Executing Last Command 
+    #Wait for executing last command 
     while lastIndex > dType.GetQueuedCmdCurrentIndex(api)[0]:
         dType.dSleep(100)
 
-    #Stop to Execute Command Queued
+    #Stop to execute command queued
     dType.SetQueuedCmdStopExec(api)
 
 #Disconnect Dobot
