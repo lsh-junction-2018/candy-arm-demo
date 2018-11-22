@@ -48,7 +48,7 @@ Feel free to refer to examle scripts about usage!
 * Note that the GoPro WiFi hotspot does not provide internet access. If you need internet when you are operating GoPro, you need to find another internet source than WiFi (such as sharing internet from your phone via USB)
 
 
-## Extras
+## Extra
 
 ### Candy image dataset
 
