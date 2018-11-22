@@ -39,6 +39,8 @@ Feel free to refer to examle scripts about usage!
 
 Our solution moves the robot arm based on coordinates we want the robot hand to go to. However, we have modified the robot end effector by turning it 90 degrees so that we can use the rotation motor coming with the suction cup to rotate the candy scoop (the suction cup is removed).
 
+NOTICE: Out of some reason whenever the y coordinate is changed, the end effector rotates even if rotation coordinate is not changed. If you want to move in y direction, make sure to manually compensate by commanding the end effector to counter this involuntary movement.
+
 
 ## Operating GoPro Hero 4
 
