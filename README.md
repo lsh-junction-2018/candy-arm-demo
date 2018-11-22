@@ -52,6 +52,6 @@ Feel free to refer to examle scripts about usage!
 
 ### Candy image dataset
 
-
+We thought you might want to have a look at image classification possibilities and have thus provided you a small dataset of with pictures of 6 different kinds of candies for toying around. The dataset has around 300 pictures of each candy type divided in folders accordingly (with pictures of the candies on a plate and in a candy box in the shop separated). Even though the dataset is small we hope that this can help you to get started with image classification. You can find it on Google Drive:
 
 https://drive.google.com/open?id=1FsbVszozyPm9nYFP_vNVBO5vsoBYvTld
