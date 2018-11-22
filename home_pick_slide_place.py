@@ -45,8 +45,12 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
 
 
     # Slide
-    # the value of 50 is found by manually positioning it and then reading it back
-    # note that J4 is installing with an additional 50deg turn w.r.t. the default guide
+
+    # Out of some reason changing the y coordinate also affects the position of the rotation end (joint 4).
+    # Here we want to keep the rotation end from not moving in order to not drop the candies while sliding.
+    # The rotation = -50 is for compensating to the change of position that happens when the y coordinate is changed.
+    # It's value was found manually by using the robot on "Handheld teaching" mode
+
     dType.SetPTPWithLCmd(api, dType.PTPMode.PTPMOVJXYZMode, 190, -114, 5, -50, 0.0, isQueued=1)
     # ---------------separation-line---------------
     dType.SetPTPWithLCmd(api, dType.PTPMode.PTPMOVJXYZMode, 190, -114, 5, -50, 200.0, isQueued=1)
