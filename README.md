@@ -33,7 +33,9 @@ In order to program Dobot in Python, do the following
 Dobot API can be found here: http://www.dobot.it/wp-content/uploads/2018/03/dobot-api-en.pdf
 The API is in C, but Dobot supports other programming languages too. List of possible functions can be found on the left sidebar of "Scripts" on Dobot Studio.
 
-Feel free to refer to examle scripts about usage!
+Feel free to refer to example scripts about usage!
+
+pick.py is the demo you have been seeing around in Junction 2018.
 
 ### Example solution description
 
